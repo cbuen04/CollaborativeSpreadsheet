@@ -1,0 +1,70 @@
+Spreadsheet Help
+
+Basics:
+
+-Startup: 
+
+Upon startup, the default location is cell A1. Click on the desired cell
+to be edited and change the contents in the cell Contents box. Press enter or use
+any arrow key to update the cell contents displayed. 
+
+
+-Allowed cell content type: 
+
+The spreadsheet will take any text, number value, or formula as indicated by starting 
+with an "=" operator and containing any valid cell name, any +,-,/,* operators, and any number
+value. 
+
+Errors will be thrown if user attempts to divide by zero, an invalid formula, or referencing a
+cell that causes a circular dependency. 
+
+SpreadsheetUtilities.FormulaError is displayed when a user attempts to divide by zero and will 
+occupy the contents of the cell. An invalid formula or a circular dependency will cause the 
+spreadsheet to reset the cell to its original contents. 
+
+-Editible fields: 
+
+The Cell contents box is editable by the user, but the Cell Name and Cell Value boxes are displayed
+based on user input and can not be manually edited. 
+
+
+
+ToolBar Folders:
+
+File Folder Basics: 
+
+-New: This will display a new blank spreadsheet on a seperate tab. 
+
+-Save: This will save the user's work. If the user did not open this file from an existing file,
+the user will be prompted to name and pick a file location on their system. Files are saved in .sprd 
+format. 
+
+-Save As: This will save the user's work and allow to save as a new file into a location on their system.
+Files are saved in .sprd format. 
+
+-Open From Existing: This allows the user to choose an existing .sprd file from their system. The user can 
+filter their search between .sprd files and All File types. 
+
+-Close: This allows a user to close their spreadsheet window. If the spreadsheet has been changed but not saved, 
+an error dialog will show a save warning. This warning will prompt the user to save, not save, or cancel their
+close operation. If the spreadsheet has not been changed since the last save or the spreadsheet is empty, 
+the spreadsheet tab will simply close. 
+
+
+Function Tab: 
+
+Sum:
+- The Sum tool helps the user to sum any number of selected cells. To activate, navigate first to the cell
+to display the calculated sum. Next, press the Sum button. Then, click all cells to add together. 
+This follows the standard error protocal, so be sure to select cells with existing values and no 
+circular dependencies or errors. Finally, click the Calculate button which appears after the first
+Sum button has been pressed. This will display the sum on the specified starting cell. 
+
+If the user wishes to cancel this operation, the user should simply click cancel and no changes will be made. 
+
+Pinkify:
+- This is a fun extra feature which turns the background of the sheet pink when pressed. To undo this
+operation, simply navigate to the pinkify button and press again.
+
+
+Warning: Clicking the red x on the top right of the spreadsheet tab will close without saving and terminate the window.
